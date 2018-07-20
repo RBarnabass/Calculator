@@ -31,7 +31,7 @@ public class Deduction {
                 if (list[i - 1].contains(".") || list[i + 1].contains(".")) {
                     list[i - 1] = (Double.parseDouble(list[i - 1]) * Double.parseDouble(list[i + 1])) + "";
                 } else {
-                    list[i - 1] = (Integer.parseInt(list[i - 1]) * Integer.parseInt(list[i + 1])) + "";
+                    list[i - 1] = (Long.parseLong(list[i - 1]) * Long.parseLong(list[i + 1])) + "";
                 }
                 break;
             }
@@ -49,7 +49,7 @@ public class Deduction {
                 if (list[i - 1].contains(".") || list[i + 1].contains(".")) {
                     list[i - 1] = (Double.parseDouble(list[i - 1]) + Double.parseDouble(list[i + 1])) + "";
                 } else {
-                    list[i - 1] = (Integer.parseInt(list[i - 1]) + Integer.parseInt(list[i + 1])) + "";
+                    list[i - 1] = (Long.parseLong(list[i - 1]) + Long.parseLong(list[i + 1])) + "";
                 }
                 break;
             }
@@ -57,7 +57,7 @@ public class Deduction {
                 if (list[i - 1].contains(".") || list[i + 1].contains(".")) {
                     list[i - 1] = (Double.parseDouble(list[i - 1]) - Double.parseDouble(list[i + 1])) + "";
                 } else {
-                    list[i - 1] = (Integer.parseInt(list[i - 1]) - Integer.parseInt(list[i + 1])) + "";
+                    list[i - 1] = (Long.parseLong(list[i - 1]) - Long.parseLong(list[i + 1])) + "";
                 }
                 break;
             }
